@@ -1,2 +1,5 @@
-# HTML-CSS-Bulma-Grabfood-Project
-For education purpose only
+# Project Title :computer:
+HTML-CSS-Bulma-Grabfood-Project
+
+# Project Description
+
