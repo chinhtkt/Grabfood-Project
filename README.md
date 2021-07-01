@@ -1,7 +1,7 @@
 # Project progress
 
 ## 1.Header
-Navbar --> Done :heavy_check_mark:
+Navbar --> Done :heavy_check_mark: </br>
 Imagine-Navbar --> Done :heavy_check_mark:
 
 ## 2. Content
