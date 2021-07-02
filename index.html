@@ -8,12 +8,15 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
     />
+    <link rel="stylesheet" href="/node_modules/bulma-quickview/dist/css/bulma-quickview.min.css"></link>
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css">
     <link rel="stylesheet" href="background.css">
     <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
+    <script type="text/javascript" src="/node_modules/bulma-quickview/dist/js/bulma-quickview.min.js"></script>
+    
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Document</title>
@@ -39,11 +42,32 @@
               <div class="navbar-end mt-3">
                 <div class="field is-grouped mr-6">
                   <p class="control">
-                    <button class="button is-small">
+                    <button onclick ="openNav()" data-show="quickview" data-target="quickviewDefault" class="button is-small " >
                       <span class="icon is-small">
                         <i class="fas fa-shopping-bag" style="color: gray"></i>
                       </span>
                     </button>
+                    <!--- Quick-view-->
+                    <div id="quickviewDefault" class="quickview">
+                      <header class="quickview-header">
+                        <span class="delete" data-dismiss="quickview" onclick="closeNav()"></span>
+                      </header>
+                      <div class="quickview-body">
+                        <div class="quickview-block" style="height: 100%; display: flex;">  
+                          <div class="column mt-3 is-flex is-flex-direction-column is-justify-content-center">
+                            <img src="/assets/ilus-basket-empty.svg" alt="">
+                            <div class="text-container has-text-centered mt-4">
+                            <h2 class="title is-size-4 has-text-weight-semibold">Start Grabbing Food!</h2>
+                            <p class="is-size-7 has-text-weight-medium mb-4">Add items to your basket and place order here.</p>
+                            <a class="has-text-info is-size-7" href="#">Continue browsing</a>
+                            </div>
+                            
+                          </div>
+                            
+                        </div>
+                      </div>
+                    </div>
+                    <!---End-->
                   </p>
                   <p class="control">
                     <button class="button is-small has-text-weight-semibold">
@@ -52,6 +76,7 @@
                   </p>
                 </div>
               </div>
+              
             </nav>
 
             </div>
@@ -61,7 +86,7 @@
         <div class="hero-body">
           <div class="container mr-3">
               <div class="columns">
-                  <div class="column is-narrow is-half has-background-white pt-6 px-5  " style="width: 360px ; min-height:380px">
+                  <div class="column is-narrow is-half has-background-white pt-6 px-5" style="width: 360px ; min-height:380px">
                     <h1 class="subtitle has-text-black has-text-weight-medium">Good Morning</h1>
                     <h2 class="title has-text-black is-size-2 has-text-weight-medium" >Let's explore good food near you.</h2>
                     <div class="field">
@@ -380,32 +405,406 @@
             
             
           </div>
+          <div class="container mt-6">
+            <div class="button is-fullwidth is-outlined is-hovered is-medium "><p class="is-size-6 has-text-weight-semibold">See all promotions</p></div>
+          </div>
         </div>
-        <div class="food-content"></div>
-        <div class="about-content"></div>
+        <div class="food-content my-6">
+          <div class="container">
+            <h2 class="title is-size-2">There's something for everyone!</h2>
+          </div>
+          <div class="container mt-5">
+            <div class="columns is-flex is-flex-wrap-wrap ">
+              <div class="column is-one-quarter">
+                <div class="img is-fullwidth">
+                  <img class="img-food " src="assets/FastFood_4710e425c3d24db2aa4280aa207a22d3_1547819143037208832.jpg">
+                </div>
+                <div class="div-desc my-2">
+                  <h1 class="is-size-5 has-text-weight-semibold">
+                    Gà rán - Burger
+                  </h1>
+                </div>
+              </div>
+              <div class="column is-one-quarter">
+                <div class="img is-fullwidth">
+                  <img class="img-food " src="assets/FastFood_4710e425c3d24db2aa4280aa207a22d3_1547819143037208832.jpg">
+                </div>
+                <div class="div-desc my-2">
+                  <h1 class="is-size-5 has-text-weight-semibold">
+                    Gà rán - Burger
+                  </h1>
+                </div>
+              </div>
+              <div class="column is-one-quarter">
+                <div class="img is-fullwidth">
+                  <img class="img-food " src="assets/FastFood_4710e425c3d24db2aa4280aa207a22d3_1547819143037208832.jpg">
+                </div>
+                <div class="div-desc my-2">
+                  <h1 class="is-size-5 has-text-weight-semibold">
+                    Gà rán - Burger
+                  </h1>
+                </div>
+              </div>
+              <div class="column is-one-quarter">
+                <div class="img is-fullwidth">
+                  <img class="img-food " src="assets/FastFood_4710e425c3d24db2aa4280aa207a22d3_1547819143037208832.jpg">
+                </div>
+                <div class="div-desc my-2">
+                  <h1 class="is-size-5 has-text-weight-semibold">
+                    Gà rán - Burger
+                  </h1>
+                </div>
+              </div>
+              <div class="column is-one-quarter">
+                <div class="img is-fullwidth">
+                  <img class="img-food " src="assets/FastFood_4710e425c3d24db2aa4280aa207a22d3_1547819143037208832.jpg">
+                </div>
+                <div class="div-desc my-2">
+                  <h1 class="is-size-5 has-text-weight-semibold">
+                    Gà rán - Burger
+                  </h1>
+                </div>
+              </div>
+              <div class="column is-one-quarter">
+                <div class="img is-fullwidth">
+                  <img class="img-food " src="assets/FastFood_4710e425c3d24db2aa4280aa207a22d3_1547819143037208832.jpg">
+                </div>
+                <div class="div-desc my-2">
+                  <h1 class="is-size-5 has-text-weight-semibold">
+                    Gà rán - Burger
+                  </h1>
+                </div>
+              </div>
+              <div class="column is-one-quarter">
+                <div class="img is-fullwidth">
+                  <img class="img-food " src="assets/FastFood_4710e425c3d24db2aa4280aa207a22d3_1547819143037208832.jpg">
+                </div>
+                <div class="div-desc my-2">
+                  <h1 class="is-size-5 has-text-weight-semibold">
+                    Gà rán - Burger
+                  </h1>
+                </div>
+              </div>
+              <div class="column is-one-quarter">
+                <div class="img is-fullwidth">
+                  <img class="img-food " src="assets/FastFood_4710e425c3d24db2aa4280aa207a22d3_1547819143037208832.jpg">
+                </div>
+                <div class="div-desc my-2">
+                  <h1 class="is-size-5 has-text-weight-semibold">
+                    Gà rán - Burger
+                  </h1>
+                </div>
+              </div>
+              <div class="column is-one-quarter">
+                <div class="img is-fullwidth">
+                  <img class="img-food " src="assets/FastFood_4710e425c3d24db2aa4280aa207a22d3_1547819143037208832.jpg">
+                </div>
+                <div class="div-desc my-2">
+                  <h1 class="is-size-5 has-text-weight-semibold">
+                    Gà rán - Burger
+                  </h1>
+                </div>
+              </div>
+              <div class="column is-one-quarter">
+                <div class="img is-fullwidth">
+                  <img class="img-food " src="assets/FastFood_4710e425c3d24db2aa4280aa207a22d3_1547819143037208832.jpg">
+                </div>
+                <div class="div-desc my-2">
+                  <h1 class="is-size-5 has-text-weight-semibold">
+                    Gà rán - Burger
+                  </h1>
+                </div>
+              </div>
+              <div class="column is-one-quarter">
+                <div class="img is-fullwidth">
+                  <img class="img-food " src="assets/FastFood_4710e425c3d24db2aa4280aa207a22d3_1547819143037208832.jpg">
+                </div>
+                <div class="div-desc my-2">
+                  <h1 class="is-size-5 has-text-weight-semibold">
+                    Gà rán - Burger
+                  </h1>
+                </div>
+              </div>
+              <div class="column is-one-quarter">
+                <div class="img is-fullwidth">
+                  <img class="img-food " src="assets/FastFood_4710e425c3d24db2aa4280aa207a22d3_1547819143037208832.jpg">
+                </div>
+                <div class="div-desc my-2">
+                  <h1 class="is-size-5 has-text-weight-semibold">
+                    Gà rán - Burger
+                  </h1>
+                </div>
+              </div>
+              <div class="column is-one-quarter">
+                <div class="img is-fullwidth">
+                  <img class="img-food " src="assets/FastFood_4710e425c3d24db2aa4280aa207a22d3_1547819143037208832.jpg">
+                </div>
+                <div class="div-desc my-2">
+                  <h1 class="is-size-5 has-text-weight-semibold">
+                    Gà rán - Burger
+                  </h1>
+                </div>
+              </div>
+              <div class="column is-one-quarter">
+                <div class="img is-fullwidth">
+                  <img class="img-food " src="assets/FastFood_4710e425c3d24db2aa4280aa207a22d3_1547819143037208832.jpg">
+                </div>
+                <div class="div-desc my-2">
+                  <h1 class="is-size-5 has-text-weight-semibold">
+                    Gà rán - Burger
+                  </h1>
+                </div>
+              </div>
+              <div class="column is-one-quarter">
+                <div class="img is-fullwidth">
+                  <img class="img-food " src="assets/FastFood_4710e425c3d24db2aa4280aa207a22d3_1547819143037208832.jpg">
+                </div>
+                <div class="div-desc my-2">
+                  <h1 class="is-size-5 has-text-weight-semibold">
+                    Gà rán - Burger
+                  </h1>
+                </div>
+              </div>
+              <div class="column is-one-quarter">
+                <div class="img is-fullwidth">
+                  <img class="img-food " src="assets/FastFood_4710e425c3d24db2aa4280aa207a22d3_1547819143037208832.jpg">
+                </div>
+                <div class="div-desc my-2">
+                  <h1 class="is-size-5 has-text-weight-semibold">
+                    Gà rán - Burger
+                  </h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-content">
+          <div class="container">
+            <h2 class="title is-size-2">Tại sao nên lựa chọn GrabFood?</h2>
+            <div class="columns is-flex is-flex-direction-column pl-1 ">
+              <div class="column"><p class="is-size-6"><span class="icon-text ">
+                <span class="icon has-text-success">
+                  <i class="fas fa-check"></i>
+                </span>
+                <span class="has-text-weight-bold">Nhanh nhất</span>
+              </span> - GrabFood cung cấp dịch vụ giao đồ ăn nhanh nhất thị trường.</p></div>
+              <div class="column"><p class="is-size-6"><span class="icon-text ">
+                <span class="icon has-text-success">
+                  <i class="fas fa-check"></i>
+                </span>
+                <span class="has-text-weight-bold">Dễ dàng nhất</span>
+              </span> - Giờ đây, bạn chỉ cần thực hiện vài cú nhấp chuột hoặc chạm nhẹ là đã có thể đặt đồ ăn. Hãy đặt đồ ăn trực tuyến hoặc tải xuống siêu ứng dụng Grab của chúng tôi để có trải nghiệm nhanh hơn và thú vị hơn.</p></div>
+              <div class="column"><p class="is-size-6"><span class="icon-text">
+                <span class="icon  has-text-success">
+                  <i class="fas fa-check"></i>
+                </span>
+                <span class="has-text-weight-bold">Đáp ứng mọi nhu cầu</span>
+              </span> - Từ món ăn đặc sản địa phương đến các nhà hàng được ưa thích, nhiều lựa chọn đa dạng chắc chắn sẽ luôn làm hài lòng khẩu vị của bạn.</p></div>
+              <div class="column"><p class="is-size-6"><span class="icon-text ">
+                <span class="icon has-text-success">
+                  <i class="fas fa-check"></i>
+                </span>
+                <span class="has-text-weight-bold">Thanh toán dễ dàng</span>
+              </span> - Giao và nhận đồ ăn thật dễ dàng. Thanh toán bằng GrabPay thậm chí còn dễ dàng hơn nữa.</p></div>
+              <div class="column"><p class="is-size-6"><span class="icon-text ">
+                <span class="icon has-text-success">
+                  <i class="fas fa-check"></i>
+                </span>
+                <span class="has-text-weight-bold">Nhiều quà tặng hơn</span>
+              </span> - Tích điểm GrabRewards cho mỗi đơn hàng của bạn và sử dụng điểm thưởng để đổi lấy nhiều ưu đãi hơn.</p></div>
+            </div>
+          </div>
+          <div class="container mt-6">
+            <h2 class="title is-size-2">Các câu hỏi thường gặp</h2>
+            <h2 class="subtitle is-size-4 has-text-weight-semibold mt-6">GrabFood là gì?</h2>
+            <p>Lunch, Bún Cá Chấm Gốc Đa - Vũ Thạnh for Dinner! We are here to satisfy your hunger with a wide selection of merchant partners in Vietnam. GrabFood là dịch vụ Giao đồ ăn nhanh nhất tại Việt Nam. Chúng tôi đã sắp xếp tất cả các món ăn, nhà hàng và thực phẩm yêu thích của bạn một cách hợp lý để giúp bạn tìm được đồ ăn dễ dàng và nhanh chóng nhất có thể. Tìm và đặt món ăn yêu thích trên khắp Việt Nam - đặt đồ ăn trực tuyến chỉ bằng vài thao tác, từ món Lifted Coffee & Brunch cho bữa sáng, đến Maazi Indian – Nhà Hàng Ấn Độ cho bữa trưa, đến Bún Cá Chấm Gốc Đa – Vũ Thạnh cho bữa tối! Hãy để chúng tôi xua tan cơn đói của bạn nhờ một loạt đối tác bán đồ ăn ở Việt Nam.</p>
+          </div>
+          <div class="container mt-6">
+            <div class="button is-fullwidth is-outlined is-hovered is-medium "><p class="is-size-6 has-text-weight-semibold">Read More</p></div>
+          </div>
+        </div>
       </div>
       <!-- Footer -->
-      <div class="bottom-banner"></div>
-      <div class="footer"></div>
+      <div class="bottom-banner mt-5 has-background-white-ter">
+        <section class="hero is-medium">
+          <div class="hero-body ">
+            <div class="columns is-flex is-justify-content-center">
+              <div class="column is-two-fifths mx-14 mb-48  is-flex is-flex-direction-column is-align-items-center">
+                <div class="banner-img">
+                  <img class="" src="/assets/bottom-food-options.svg">
+                </div>
+                <div class="main-text mt-5">
+                  <h2 class="title is-size-5 mb-3 ">Curated restaurants</h2>
+                </div>
+                <div class="desc">
+                  <h2 class="is-size-6 has-text-centered">From small bites to big meals, we won't limit your appetite. Go ahead and order all you want.</h2>
+                </div>
+              </div>
+              <div class="column is-two-fifths mx-14 mb-48 is-flex is-flex-direction-column is-align-items-center">
+                <div class="banner-img">
+                  <img class="" src="/assets/bottom-food-options.svg">
+                </div>
+                <div class="main-text mt-5 padding-top">
+                  <h2 class="title is-size-5 mb-3">More cool features available on the app</h2>
+                </div>
+                <div class="desc">
+                  <h2 class="is-size-6 has-text-centered ">Download Grab app to use other payment methods and enjoy seamless communication with your driver.</h2>
+                </div>
+                <div class="container">
+                  <div class="columns mt-3">
+                    <div class="column">
+                      <img src="/assets/logo-appstore.svg" alt="">
+                    </div>
+                    <div class="column">
+                      <img src="/assets/logo-playstore.svg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+      <div class="foot">
+        <section class="hero is-fullwidth" style="background-color: #00b14f;">
+          <div class="hero-head">
+            <nav class="navbar" style="height: 71px;">
+              <div class="container" style="border-bottom: 1px solid white;">
+                <div class="navbar-brand">
+                  <a class="navbar-item">
+                    <img src="/assets/logo-grabfood-white.svg" alt="Logo">
+                  </a>
+                </div> 
+                <div id="navbarMenuHeroA" class="navbar-menu">
+                  <div class="navbar-end is-flex is-align-self-center">
+                    <div class="control has-icons-left mt-2 pr-3">
+                      <div class="select is-small is-success">
+                        <select>
+                          <option selected>Country</option>
+                          <option>Vietnam</option>
+                          <option>English</option>
+                        </select>
+                      </div>
+                      <div class="icon is-small is-left">
+                        <i class="fas fa-globe"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+          <div class="hero-body">
+            <div class="container" style="border-bottom: 1px solid white;">
+              <div class="columns">
+                <div class="column">
+                  <div class="mb-5">
+                    <a class="is-size-6 has-text-white has-text-weight-semibold" href="#">Về GrabFood</a>
+                  </div>
+                  <div class="mb-5">
+                    <a class="is-size-6 has-text-white has-text-weight-semibold" href="#">Về Grab</a>
+                  </div>
+                  <div class="mb-5">
+                    <a class="is-size-6 has-text-white has-text-weight-semibold" href="#">Blog</a>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="mb-5">
+                    <a class="is-size-6 has-text-white has-text-weight-semibold" href="#">Mở quán trên grabfood</a>
+                  </div>
+                  <div class="mb-5">
+                    <a class="is-size-6 has-text-white has-text-weight-semibold" href="#">Trở thành tài xế Grab</a>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="mb-5">
+                    <a class="is-size-6 has-text-white has-text-weight-semibold" href="#">Trung tâm hỗ trợ</a>
+                  </div>
+                  <div class="mb-5">
+                    <a class="is-size-6 has-text-white has-text-weight-semibold" href="#">Câu hỏi thường gặp</a>
+                  </div>
+                </div>
+                <div class="column is-flex is-flex-direction-row">
+                  <div class="mb-5 mr-5">
+                    <span class="icon-text is-large ">
+                      <span class="icon">
+                        <i class="fab fa-facebook-square" style="color: white; font-size: 30px;"></i>
+                      </span>
+                    </span>  
+                  </div>
+                  <div class="mb-5 mr-5">
+                    <span class="icon-text is-large  ">
+                      <span class="icon">
+                        <i class="fab fa-instagram" style="color: white; font-size: 30px;"></i>
+                      </span>
+                    </span>
+                  </div>
+                  <div class="mb-5 mr-5">
+                    <span class="icon-text is-large">
+                      <span class="icon">
+                        <i class="fab fa-twitter-square" style="color: white; font-size: 30px;"></i>
+                      </span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container mt-5">
+              <div class="columns is-flex is-justify-content-space-between">
+                <div class="column is-flex" >
+                  <div class="img-footer mr-5">
+                    <img src="/assets/logo-appstore.svg" alt="">
+                  </div>
+                  <div class="img-footer">
+                    <img src="/assets/logo-playstore.svg" alt="">
+                  </div>
+                </div>
+                <div class ="column is-flex is-flex-direction-row is-align-self-center on-right ">
+                    <div class="term is-size-7 has-text-white mr-5">
+                      <p>@2021 Grab</p>
+                    </div>
+                    <div class="question-security is-flex">
+                      <a href=""><p class=" is-size-7 has-text-white mr-5">Câu Hỏi Thường Gặp</p></a>
+                      <a href=""><p class=" is-size-7 has-text-white">Chính Sách Bảo Mật</p></a>
+                    </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
     </div>
+
     
+    
+
   </body>
+  <script>
 
-<script>
+    // openNav = () => {
+    //   document.body.style.backgroundColor = "rgba(10,10,10,.86)";
+    // }
 
-  bulmaCarousel.attach('#carousel-demo', {
-			slidesToScroll: 2,
-			slidesToShow: 4,
-		});
-  
-const navbar = document.querySelector('.navbar');
-window.onscroll = (e) => {
-  if (window.scrollY > 100) {
-      navbar.classList.add('nav-active');
-  } else {
-      navbar.classList.remove('nav-active');
-  }
-};
+    // closeNav = () => {
+    //   document.body.style.backgroundColor = "white";
+    // }
 
-</script>
+    var quickviews = bulmaQuickview.attach();
+    
+          bulmaCarousel.attach('#carousel-demo', {
+              slidesToScroll: 2,
+              slidesToShow: 4,
+            });
+
+        const navbar = document.querySelector('.navbar');
+        window.onscroll = (e) => {
+          if (window.scrollY > 100) {
+              navbar.classList.add('nav-active');
+          } else {
+              navbar.classList.remove('nav-active');
+          }
+        };
+        </script>
 </html>

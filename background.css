@@ -7,6 +7,38 @@
     border-radius: 10px;
 }
 
-.main {
-    height: 2000px;
+.img-food {
+  border-radius: 4px;
 }
+
+.is-hovered:hover {
+  color: green;
+  border-color: green;
+  
+}
+.overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+.padding-top {
+  padding-top: 1px;
+}
+
+.on-right {
+  justify-content: flex-end;
+}
+
+.about-content{
+  margin-top: 150px;
+}
+
