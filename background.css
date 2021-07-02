@@ -1,0 +1,12 @@
+.nav-active {
+  background-color: white !important;
+  box-shadow: 5px -1px 12px -5px grey;
+}
+
+.img-border {
+    border-radius: 10px;
+}
+
+.main {
+    height: 2000px;
+}
