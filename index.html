@@ -25,64 +25,73 @@
   <body>
     <!-- Header -->
     <div class="main">
-      <section class="hero is-medium " style="background: url(/assets/VN-new-2.jpg) no-repeat 50% / cover;">
+      <section class="hero is-large " style="background: url(/assets/VN-new-2.jpg) no-repeat 50% / cover;">
         <div class="hero-head">
           <div class="header">
             <div class="container">
-              <nav class="navbar is-fixed-top" style="padding: 16px;">
-                <div class="navbar-brand ">
-                  <div class="navbar-item ml-6">
-                    <a href="main.html">
-                      <img
-                      class="is-size-6 logo-item img-logo"
-                      src="/assets/logo-grabfood-white.svg"
-                      width="130"
-                      id="logo"
-                    />
-                    </a>
-
-                  </div>
-                </div>
-              <div class="navbar-end mt-3">
-                <div class="field is-grouped mr-6">
-                  <p class="control">
-                    <button onclick ="openNav()" data-show="quickview" data-target="quickviewDefault" class="button is-small" style="padding: 18px" >
-                      <span class="icon is-small">
-                        <i class="fas fa-shopping-bag" style="color: gray"></i>
-                      </span>
-                    </button>
-                    <!--- Quick-view-->
-                    <div id="quickviewDefault" class="quickview">
-                      <header class="quickview-header">
-                        <span class="delete" data-dismiss="quickview" onclick="closeNav()"></span>
-                      </header>
-                      <div class="quickview-body">
-                        <div class="quickview-block" style="height: 100%; display: flex;">  
-                          <div class="column mt-3 is-flex is-flex-direction-column is-justify-content-center">
-                            <img src="/assets/ilus-basket-empty.svg" alt="">
-                            <div class="text-container has-text-centered mt-4">
-                            <h2 class="title is-size-4 has-text-weight-semibold">Start Grabbing Food!</h2>
-                            <p class="is-size-7 has-text-weight-medium mb-4">Add items to your basket and place order here.</p>
-                            <a class="has-text-info is-size-7" href="#">Continue browsing</a>
-                            </div>
-                            
-                          </div>
-                            
-                        </div>
+              <nav class="navbar is-fixed-top" style="padding: 10px 0;">
+                <div class="container " style="width: 100%;">
+                  <div class="column ">
+                    <div class="navbar-brand">
+                      <div class="navbar-item " style="margin-left: -13px;">
+                        <a href="main.html">
+                          <img
+                          class="is-size-6 logo-item img-logo"
+                          src="/assets/logo-grabfood-white.svg"
+                          width="130"
+                          id="logo"
+                        />
+                        </a>
                       </div>
                     </div>
-                    <!---End-->
-                  </p>
-                  <p class="control">
-                    <a href="login.html">
+                  </div>
+                  <div class="column">
+                    <div class="navbar-end " style="margin-right: -12px;">
+                      <div class="field is-grouped ">
+                        <p class="control">
+                          <button onclick ="openNav()" data-show="quickview" data-target="quickviewDefault" class="button is-small" style="padding: 18px" >
+                            <span class="icon is-small">
+                              <i class="fas fa-shopping-bag" style="color: gray"></i>
+                            </span>
+                          </button>
+                          <!--- Quick-view-->
+                          <div id="quickviewDefault" class="quickview">
+                            <header class="quickview-header">
+                              <span class="delete" data-dismiss="quickview" onclick="closeNav()"></span>
+                            </header>
+                            <div class="quickview-body">
+                              <div class="quickview-block" style="height: 100%; display: flex;">  
+                                <div class="column mt-3 is-flex is-flex-direction-column is-justify-content-center">
+                                  <img src="/assets/ilus-basket-empty.svg" alt="">
+                                  <div class="text-container has-text-centered mt-4">
+                                  <h2 class="title is-size-4 has-text-weight-semibold">Start Grabbing Food!</h2>
+                                  <p class="is-size-7 has-text-weight-medium mb-4">Add items to your basket and place order here.</p>
+                                  <a class="has-text-info is-size-7" href="#">Continue browsing</a>
+                                  </div>
+                                  
+                                </div>
+                                  
+                              </div>
+                            </div>
+                          </div>
+                          <!---End-->
+                        </p>
+                        <p class="control">
+                          <a href="login.html">
+      
+                            <button class="button is-small has-text-weight-semibold" style="padding: 18px">
+                              Đăng nhập
+                            </button>
+                          </a>
+                        </p>
+                      </div>
+                    </div>
 
-                      <button class="button is-small has-text-weight-semibold" style="padding: 18px">
-                        Đăng nhập
-                      </button>
-                    </a>
-                  </p>
+                  </div>
+                  
                 </div>
-              </div>
+                
+              
               
             </nav>
 
@@ -91,9 +100,9 @@
           </div>
         </div>
         <div class="hero-body">
-          <div class="container mr-3">
-              <div class="columns">
-                  <div class="column is-narrow is-half has-background-white pt-6 px-5" style="width: 360px ; min-height:380px">
+          <div class="container">
+              <div class="columns" style="margin-left: 2px;">
+                  <div class="column is-narrow is-half has-background-white pt-6 px-5" style="width: 360px ; min-height:380px; border-radius: 4px" >
                     <h1 class="subtitle has-text-black has-text-weight-medium">Good Morning</h1>
                     <h2 class="title has-text-black is-size-2 has-text-weight-medium" >Let's explore good food near you.</h2>
                     <div class="field">
@@ -104,7 +113,7 @@
                         </span>
                       </p>
                     </div>
-                    <button class="button mt-3 is-fullwidth is-success">Tìm Kiếm</button>
+                    <button class="button mt-3 is-fullwidth is-success has-text-weight-semibold py-5">Tìm Kiếm</button>
                   </div>
               </div>
         </div>
@@ -794,8 +803,8 @@
      var quickviews = bulmaQuickview.attach();
     
           bulmaCarousel.attach('#carousel-demo', {
-              slidesToScroll: 2,
-              slidesToShow: 4,
+              slidesToScroll: 1,
+              slidesToShow: 3,
             });
 
         const navbar = document.querySelector('.navbar');
