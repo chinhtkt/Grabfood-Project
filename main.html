@@ -11,11 +11,10 @@
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
     />
     <link rel="stylesheet" href="/node_modules/bulma-quickview/dist/css/bulma-quickview.min.css"></link>
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css">
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="css/main.css">
     <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
     <script type="text/javascript" src="/node_modules/bulma-quickview/dist/js/bulma-quickview.min.js"></script>
 </head>
@@ -64,7 +63,7 @@
                   <div class="navbar-end is-align-items-center" style="margin-right: -12px;">
                     <div class="field is-grouped" >
                       <p class="control">
-                        <button onclick ="openNav()" data-show="quickview" data-target="quickviewDefault" class="button is-small" style="padding: 18px" >
+                        <button  data-show="quickview" data-target="quickviewDefault" class="button is-small" style="padding: 18px" >
                           <span class="icon is-small">
                             <i class="fas fa-shopping-bag" style="color: gray"></i>
                           </span>
@@ -72,7 +71,7 @@
                         <!--- Quick-view-->
                         <div id="quickviewDefault" class="quickview">
                           <header class="quickview-header">
-                            <span class="delete" data-dismiss="quickview" onclick="closeNav()"></span>
+                            <span class="delete" data-dismiss="quickview" ></span>
                           </header>
                           <div class="quickview-body">
                             <div class="quickview-block" style="height: 100%; display: flex;">  
