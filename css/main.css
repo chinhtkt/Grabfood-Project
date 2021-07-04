@@ -1,0 +1,45 @@
+.navbar-input input {
+    cursor: pointer;
+    border-radius: 7px;
+  }
+
+.nav-active {
+    background-color: white !important;
+    box-shadow: 5px -1px 12px -5px grey;
+    z-index: 999;
+  }
+  
+.navbar-input .input:focus {
+    border: solid green;
+    outline: none;
+    box-shadow: none;
+}
+
+.navbar-input input:focus::placeholder{
+    text-align: start;
+    font-weight: bold
+}
+
+.navbar-input ::placeholder{
+    text-align: center;
+    font-weight:bold
+}
+
+.navbar-input ::placeholder:focus {
+    text-align: start;
+}
+
+.slider-input ::placeholder {
+    color: gray;
+}
+
+.slider-input input {
+    border: 0;
+    box-shadow: none;
+
+}
+
+.slider-input .input:focus {
+    box-shadow: none ;
+}
+

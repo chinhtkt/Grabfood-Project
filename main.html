@@ -15,11 +15,119 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css">
-    <link rel="stylesheet" href="/css/background.css">
+    <link rel="stylesheet" href="/css/main.css">
     <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
     <script type="text/javascript" src="/node_modules/bulma-quickview/dist/js/bulma-quickview.min.js"></script>
 </head>
 <body>
-    <h2>Test</h2>
+   <div class="main" style="height: 5000px;">
+    <section class="hero is-medium">
+      <div class="hero-head">
+        <div class="header">
+          <div class="container">
+            <nav class="navbar is-fixed-top" style="padding: 10px 0;">
+              <div class="container " style="width: 100%;">  
+                <div class="column is-flex ">
+                  <div class="navbar-brand">
+                    <div class="navbar-item " style="margin-left: -13px; ">
+                      <a href="main.html">
+                        <img
+                        class="is-size-6 logo-item img-logo"
+                        src="assets/logo-grabfood.svg"
+                        width="130"
+                        id="logo"
+                      />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="navbar-start mr-6" style="margin-left: 40px;">
+                    <div class="navbar-item" style="width:355px;">
+                      <div class="control" style="width:100%">
+                        <div class="field">
+                          <div class="navbar-input">
+                            <p class="control has-icons-left">
+                              <input class="input" type="text" placeholder="Nhập địa chỉ của bạn"></input>
+                                <span class="icon is-small has-text-danger is-left">
+                                  <i class="fas fa-location-arrow"></i>
+                                </span>
+                            </p>
+                          </div>
+                         
+                        </div>
+                      </div>
+      
+                    </div>
+      
+                  </div>
+                </div>
+                <div class="column is-flex">
+                  <div class="navbar-end is-align-items-center" style="margin-right: -12px;">
+                    <div class="field is-grouped" >
+                      <p class="control">
+                        <button onclick ="openNav()" data-show="quickview" data-target="quickviewDefault" class="button is-small" style="padding: 18px" >
+                          <span class="icon is-small">
+                            <i class="fas fa-shopping-bag" style="color: gray"></i>
+                          </span>
+                        </button>
+                        <!--- Quick-view-->
+                        <div id="quickviewDefault" class="quickview">
+                          <header class="quickview-header">
+                            <span class="delete" data-dismiss="quickview" onclick="closeNav()"></span>
+                          </header>
+                          <div class="quickview-body">
+                            <div class="quickview-block" style="height: 100%; display: flex;">  
+                              <div class="column mt-3 is-flex is-flex-direction-column is-justify-content-center">
+                                <img src="assets/ilus-basket-empty.svg" alt="">
+                                <div class="text-container has-text-centered mt-4">
+                                <h2 class="title is-size-4 has-text-weight-semibold">Start Grabbing Food!</h2>
+                                <p class="is-size-7 has-text-weight-medium mb-4">Add items to your basket and place order here.</p>
+                                <a class="has-text-info is-size-7" href="#">Continue browsing</a>
+                                </div>
+                                
+                              </div>
+                                
+                            </div>
+                          </div>
+                        </div>
+                        <!---End-->
+                      </p>
+                      <p class="control">
+                        <a href="login.html">
+    
+                          <button class="button is-small has-text-weight-semibold" style="padding: 18px">
+                            Đăng nhập
+                          </button>
+                        </a>
+                      </p>
+                    </div>
+                  </div>
+    
+                </div>         
+              </div>    
+          </nav>   
+          </div>
+        </div>
+      </div>
+      <div class="hero-body">
+        <div class="container" style="top: -25px;">
+          <div class="columns">
+            <div class="column">
+              <div class="field">
+                <div class="slider-input">
+                  <p class="control has-icons-left">
+                    <input class="input is-rounded has-background-white-bis" type="text" placeholder="Tìm món hoặc quán ăn"></input>
+                    <span class="icon is-small has-text-black is-left">
+                      <i class="fas fa-search"></i>
+                    </span>
+                  </p>
+                </div>            
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+   </div>
 </body>
+<script src="/js/mainscript.js"></script>
 </html>
