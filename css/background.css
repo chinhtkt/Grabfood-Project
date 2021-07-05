@@ -13,7 +13,7 @@
 
 
 
-.is-hovered:hover {
+.button .is-fullwidth .is-outlined .is-hovered .is-medium {
   color: green;
   border-color: green;
   
@@ -30,6 +30,10 @@
   background-color: rgba(0,0,0,0.5);
   z-index: 2;
   cursor: pointer;
+}
+
+.carousel {
+  overflow: hidden;
 }
 
 .padding-top {
