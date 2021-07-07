@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="icon" type="image/png" href="assets/faviconlogin.ico"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Grab</title>
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+        />
+        <link rel="stylesheet" href="/node_modules/bulma-quickview/dist/css/bulma-quickview.min.css"></link>
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css">
+        <link rel="stylesheet" href="css/detail.css">
+        <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
+        <script type="text/javascript" src="/node_modules/bulma-quickview/dist/js/bulma-quickview.min.js"></script>
+    </head>
+<body>
+    <div class="main">
+        <section>
+            <header class="header">
+                <nav class="navbar is-fixed-top has-background-white">
+                    <div class="container " style="width: 100%;">  
+                        <div class="column is-flex ">
+                          <div class="navbar-brand">
+                            <div class="navbar-item " style="margin-left: -13px; ">
+                              <a href="main.html">
+                                <img
+                                class="is-size-6 logo-item img-logo"
+                                src="assets/logo-grabfood.svg"
+                                width="130"
+                                id="logo"
+                              />
+                              </a>
+                            </div>
+                          </div>
+                          <div class="navbar-start mr-6" style="margin-left: 40px;">
+                            <div class="navbar-item" style="width:355px;">
+                              <div class="control" style="width:100%">
+                                <div class="field">
+                                  <div class="navbar-input">
+                                    <p class="control has-icons-left">
+                                      <input class="input" type="text" placeholder="Nhập địa chỉ của bạn"></input>
+                                        <span class="icon is-small has-text-danger is-left">
+                                          <i class="fas fa-location-arrow"></i>
+                                        </span>
+                                    </p>
+                                  </div>
+                                 
+                                </div>
+                              </div>
+              
+                            </div>
+              
+                          </div>
+                        </div>
+                        <div class="column is-flex">
+                          <div class="navbar-end is-align-items-center" style="margin-right: -12px;">
+                            <div class="field is-grouped" >
+                              <p class="control">
+                                <button  data-show="quickview" data-target="quickviewDefault" class="button is-small" style="padding: 18px" >
+                                  <span class="icon is-small">
+                                    <i class="fas fa-shopping-bag" style="color: gray"></i>
+                                  </span>
+                                </button>
+                                <!--- Quick-view-->
+                                <div id="quickviewDefault" class="quickview">
+                                  <header class="quickview-header">
+                                    <span class="delete" data-dismiss="quickview" ></span>
+                                  </header>
+                                  <div class="quickview-body">
+                                    <div class="quickview-block" style="height: 100%; display: flex;">  
+                                      <div class="column mt-3 is-flex is-flex-direction-column is-justify-content-center">
+                                        <img src="assets/ilus-basket-empty.svg" alt="">
+                                        <div class="text-container has-text-centered mt-4">
+                                        <h2 class="title is-size-4 has-text-weight-semibold">Start Grabbing Food!</h2>
+                                        <p class="is-size-7 has-text-weight-medium mb-4">Add items to your basket and place order here.</p>
+                                        <a class="has-text-info is-size-7" href="#">Continue browsing</a>
+                                        </div>
+                                        
+                                      </div>
+                                        
+                                    </div>
+                                  </div>
+                                </div>
+                                <!---End-->
+                              </p>
+                              <p class="control">
+                                <a href="login.html">
+            
+                                  <button class="button is-small has-text-weight-semibold" style="padding: 18px">
+                                    Đăng nhập
+                                  </button>
+                                </a>
+                              </p>
+                            </div>
+                          </div>
+            
+                        </div>         
+                      </div>
+                </nav>
+            </header>
+                 <div class="content-top">
+                     <div class="container mt-3">
+                         <div class="column is-half" style="margin-left:-13px;">
+                            <nav class="breadcrumb has-succeeds-separator mb-1" aria-label="breadcrumbs">
+                                <ul>
+                                  <li><a href="#">Trang chủ</a></li>
+                                  <li><a href="#">Nhà Hàng</a></li>
+                                  <li class="is-active"><a href="#" aria-current="page">Starbucks Coffee - Nhà Thờ</a></li>
+                                </ul>
+                              </nav>
+                              <div class="main-name">
+                                <h2 class="title is-size-2">Starbucks Coffee - Nhà Thờ</h2>
+                              </div>
+                              <div class="desc-name mt-3">
+                                <h2 class="is-size-6">
+                                  Cà Phê - Trà - Sinh Tố - Nước ép
+                                </h2>
+                            </div>
+                            <div class="info mt-1">
+                                <span class="icon-text mr-4">
+                                  <span class="icon has-text-warning">
+                                    <i class="fas fa-star "></i>
+                                  </span>
+                                  <span>4.6</span>
+                                </span>
+                                <span class="icon-text">
+                                  <span class="icon">
+                                    <i class="far fa-clock"></i>
+                                  </span>
+                                  <span class="mr-4">15 phút</span>
+                                  &nbsp;&nbsp;• 2 km
+                                </span>
+                              </div>
+                              <div class="time mt-2">
+                                  <span class="mr-6 has-text-weight-semibold">Giờ mở cửa</span>
+                                  <span>Today 07:00-21:00
+                                </span>
+                              </div>
+                              <div class="coupon mt-2 ">
+                                <span class="icon-text flex is-flex-wrap-nowrap">
+                                  <span class="icon has-text-success">
+                                    <i class="fas fa-tag"></i>
+                                  </span>
+                                  <span class="is-size-6 mr-4">Giảm 50K nhập STARBUCKS50</span>
+                                </span>
+                                <span><a id="showModal" class="has-text-weight-semibold">See details</a></span>
+                                <div class="modal">
+                                    <div class="modal-background"></div>
+                                    <div class="modal-content is-flex is-justify-content-center">
+                                      <div class="column custom-background is-8 has-background-white is-flex is-justify-content-flex-start is-flex-direction-column " style="padding: 40px;">
+                                        <span class="icon-text flex is-flex-wrap-nowrap" >
+                                            <span class="is-size-5">Promotion</span>
+                                            <span class="icon has-text-success" style="margin-top: 2px;">
+                                                <i class="fas fa-tag"></i>
+                                              </span>
+                                          </span>
+                                        <div class="desc mt-4">
+                                            <h2 class="is-size-6">
+                                                Giảm 50K nhập STARBUCKS50
+                                            </h2>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <button class="modal-close is-large" aria-label="close"></button>
+                                  </div>
+                                  <div class="container mt-3">
+                                      <div class="columns ">
+                                          <div class="column is-two-thirds">
+                                            <div class="control has-icons-left">
+                                                <div class="select is-fullwidth">
+                                                  <select style="z-index: 1;">
+                                                    <option selected>Deliver date: Today</option>
+                                                    <option>Tue, 6 Jul</option>
+                                                    <option>Wed, 7 Jul</option>
+                                                  </select>
+                                                </div>
+                                                <div class="icon is-small is-left">
+                                                    <i class="far fa-calendar-alt"></i>
+                                                </div>
+                                              </div>
+
+                                          </div>
+                                          <div class="column is-two-thirds">
+                                            <div class="control has-icons-left">
+                                                <div class="select is-fullwidth">
+                                                  <select style="z-index: 1;">
+                                                    <option selected>Deliver time: Now</option>
+                                                    <option>18:00-18:15</option>
+                                                    <option>18:15-18:30</option>
+                                                  </select>
+                                                </div>
+                                                <div class="icon is-small is-left">
+                                                    <i class="far fa-clock"></i>
+                                                </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                    
+                                    
+                                  </div>
+                                
+                              </div>
+                         </div>
+                         </div>
+                     </div>
+                 </div>
+
+            <header class="header header-2">
+                <nav class="navbar has-background-white"></nav>
+            </header>
+            <div class="content">
+                <div class="container">
+                    <div class="columns">
+                        <div class="column is-half mt-5">
+                            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, fugit. Ratione iure expedita a, id, provident facere aspernatur veritatis reprehenderit ducimus odio officia tempore fugiat assumenda laborum laboriosam et molestias!</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            </section>
+    </div>
+    
+    
+</body>
+<script src="js/detail.js"></script>
+</html>

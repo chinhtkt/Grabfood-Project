@@ -1,0 +1,47 @@
+.nav-active {
+  background-color: white !important;
+  z-index: 999 !important;
+}
+
+h1 {
+  letter-spacing: 3px;
+  margin: 0;
+  padding-left: 10px;
+  padding-top: 10px;
+  color: #fff;
+  font-weight: 100;
+}
+
+.header {
+  width: 100%;
+  height: 50px;
+  position: sticky;
+  top: 0px;
+}
+
+.container {
+  position: static;
+}
+.content-top {
+  width: 100%;
+  height: 350px;
+  background: white;
+  padding-top: 50px;
+  margin: 0;
+}
+
+.custom-background {
+    border-radius: 8px;
+}
+
+.content {
+  height: 100vh;
+  width: 100%;
+  background-color: #f7f7f7;
+}
+
+.header-2 {
+  top: 76px;
+  width: 100%;
+  box-shadow: 0 4px 6px 0 rgb(28 28 28 / 6%);
+}
