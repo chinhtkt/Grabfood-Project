@@ -1,6 +1,11 @@
 .nav-active {
   background-color: white !important;
-  z-index: 999 !important;
+  z-index: -1 !important;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 150px;
 }
 
 h1 {
@@ -17,8 +22,15 @@ h1 {
   height: 50px;
   position: sticky;
   top: 0px;
+  background-color: white;
 }
 
+
+.tabs li a:hover {
+  color:lightgreen;
+  border-bottom: lightgreen;
+
+}
 .container {
   position: static;
 }
@@ -35,8 +47,12 @@ h1 {
 }
 
 .content {
-  height: 100vh;
+  height: 100%;
   width: 100%;
+  background-color: #f7f7f7;
+}
+
+.main {
   background-color: #f7f7f7;
 }
 
@@ -44,4 +60,16 @@ h1 {
   top: 76px;
   width: 100%;
   box-shadow: 0 4px 6px 0 rgb(28 28 28 / 6%);
+}
+
+.custom-card {
+  border-radius: 4px;
+}
+
+.custom-card:hover {
+ border: 1px solid greenyellow;
+  cursor: pointer;
+
+  
+
 }

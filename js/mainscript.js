@@ -14,6 +14,8 @@ bulmaCarousel.attach('#carousel-main', {
 
 
 
+
+
 const navbar = document.querySelector('.navbar');
 window.onscroll = (e) => {
   if (window.scrollY > 1) {
