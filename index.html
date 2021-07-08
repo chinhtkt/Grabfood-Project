@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css">
     <link rel="stylesheet" href="css/background.css">
     <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma-helpers/0.4.0/css/bulma-helpers.min.css" integrity="sha512-U6ELnUi7oqVEjkLmFw5r5UR5LEtvpImS/jUykBKneVhD0lxZxfJZ3k3pe003ktrtNZYungd9u3Urp2X09wKwXg==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.com/libraries/bulma-helpers">
 
     <!---Bulma quickview---->
     <script type="text/javascript" src="node_modules/bulma-quickview/dist/js/bulma-quickview.min.js"></script>
@@ -32,9 +34,9 @@
             <div class="container">
               <nav class="navbar is-fixed-top" style="padding: 10px 0;">
                 <div class="container " style="width: 100%;">
-                  <div class="column ">
+                  <div class="column is-flex-desktop is-flex-touch is-flex-direction-row is-justify-content-space-between">
                     <div class="navbar-brand">
-                      <div class="navbar-item " style="margin-left: -13px;">
+                      <div class="navbar-item ">
                         <a href="main.html">
                           <img
                           class="is-size-6 logo-item img-logo"
@@ -45,9 +47,7 @@
                         </a>
                       </div>
                     </div>
-                  </div>
-                  <div class="column">
-                    <div class="navbar-end " style="margin-right: -12px;">
+                    <div class="navbar-end ">
                       <div class="field is-grouped ">
                         <p class="control">
                           <button  data-show="quickview" data-target="quickviewDefault" class="button is-small" style="padding: 18px" >
@@ -86,29 +86,22 @@
                         </p>
                       </div>
                     </div>
-
-                  </div>
-                  
+                  </div>     
                 </div>
-                
-              
-              
             </nav>
-
             </div>
-            
           </div>
         </div>
-        <div class="hero-body">
-          <div class="container">
+        <div class="hero-body is-flex-tablet is-flex is-align-items-center">
+          <div class="container" style="bottom: 60px;">
               <div class="columns" style="margin-left: 2px;">
                   <div class="column is-narrow is-half has-background-white pt-6 px-5" style="width: 360px ; min-height:380px; border-radius: 4px" >
                     <h1 class="subtitle has-text-black has-text-weight-medium">Good Morning</h1>
                     <h2 class="title has-text-black is-size-2 has-text-weight-medium" >Let's explore good food near you.</h2>
                     <div class="field">
-                      <p class="control has-icons-left">
-                        <input class="input" type="text" placeholder="Nhập địa chỉ của bạn"></input>
-                          <span class="icon is-small has-text-danger is-left">
+                      <p class="control has-icons-left ">
+                        <input class="input is-flex-tablet is-align-items-center has-padding-bottom-20-tablet has-padding-top-20-tablet" type="text" placeholder="Nhập địa chỉ của bạn"></input>
+                          <span class="has-margin-top-4-tablet icon is-small has-text-danger is-left">
                             <i class="fas fa-location-arrow"></i>
                           </span>
                       </p>
@@ -123,11 +116,11 @@
       <!-- Content -->
       <div class="content">
         <div class="food-container" >
-          <section class="container pt-6 ">
-            <h1 class="title is-size-2">Mã khuyến mãi GrabFood ở <span class="has-text-success">Hà nội</span></h1>
+          <section class="container mt-6">
+            <h1 class="title is-size-3-desktop is-size-4-touch has-text-centered-touch ">Mã khuyến mãi GrabFood ở <span class="has-text-success">Hà nội</span></h1>
             <!-- Start Carousel -->
               <div id="carousel-demo" class="columns carousel is-flex is-flex-direction-column mt-3">
-                <div class="column is-full item-1 is-clickable" >
+                <div class="column has-margin-left-15-touch has-margin-right-15-touch is-clickable" >
                   <div class="image is-fullwidth is-clickable">
                     <img class="img-border" src="assets/0fdfa47d9b5942fea0b8d010bb0f3c04_1623600904642311345.png">
                   </div>
@@ -163,7 +156,7 @@
                     </span>
                   </div>
                 </div>
-                <div class="column is-full  item-2 is-clickable" >
+                <div class="column has-margin-left-15-touch has-margin-right-15-touch is-clickable" >
                   <div class="image is-fullwidth">
                     <img class="img-border" src="assets/0fdfa47d9b5942fea0b8d010bb0f3c04_1623600904642311345.png">
                   </div>
@@ -199,7 +192,7 @@
                     </span>
                   </div>
                 </div>
-                <div class="column is-full  item-3 is-clickable" >
+                <div class="column has-margin-left-15-touch has-margin-right-15-touch  is-clickable" >
                   <div class="image is-fullwidth">
                     <img class="img-border" src="assets/0fdfa47d9b5942fea0b8d010bb0f3c04_1623600904642311345.png">
                   </div>
@@ -235,7 +228,7 @@
                     </span>
                   </div>
                 </div>
-                <div class="column is-full  item-4 is-clickable" >
+                <div class="column  has-margin-left-15-touch has-margin-right-15-touch is-clickable" >
                   <div class="image is-fullwidth">
                     <img class="img-border" src="assets/0fdfa47d9b5942fea0b8d010bb0f3c04_1623600904642311345.png">
                   </div>
@@ -271,7 +264,7 @@
                     </span>
                   </div>
                 </div>
-                <div class="column is-full  item-4 is-clickable" >
+                <div class="column  has-margin-left-15-touch has-margin-right-15-touch is-clickable" >
                   <div class="image is-fullwidth">
                     <img class="img-border" src="assets/0fdfa47d9b5942fea0b8d010bb0f3c04_1623600904642311345.png">
                   </div>
@@ -307,7 +300,7 @@
                     </span>
                   </div>
                 </div>
-                <div class="column is-full  item-4 is-clickable" >
+                <div class="column  has-margin-left-15-touch has-margin-right-15-touch is-clickable" >
                   <div class="image is-fullwidth">
                     <img class="img-border" src="assets/0fdfa47d9b5942fea0b8d010bb0f3c04_1623600904642311345.png">
                   </div>
@@ -343,7 +336,7 @@
                     </span>
                   </div>
                 </div>
-                <div class="column is-full  item-4 is-clickable" >
+                <div class="column  has-margin-left-15-touch has-margin-right-15-touch is-clickable" >
                   <div class="image is-fullwidth">
                     <img class="img-border" src="assets/0fdfa47d9b5942fea0b8d010bb0f3c04_1623600904642311345.png">
                   </div>
@@ -379,7 +372,7 @@
                     </span>
                   </div>
                 </div>
-                <div class="column is-full  item-4 is-clickable" >
+                <div class="column  has-margin-left-15-touch has-margin-right-15-touch is-clickable" >
                   <div class="image is-fullwidth">
                     <img class="img-border" src="assets/0fdfa47d9b5942fea0b8d010bb0f3c04_1623600904642311345.png">
                   </div>
@@ -416,22 +409,20 @@
                   </div>
                 </div>
               </div>
+              <div class="container mt-6">
+                <div class="button has-margin-left-15-touch has-margin-right-15-touch is-fullwidth is-outlined is-hovered is-medium "><p class="is-size-6 has-text-weight-semibold">See all promotions</p></div>
+              </div>
             </section>
             </div>
-            
-            
-          </div>
-          <div class="container mt-6">
-            <div class="button is-fullwidth is-outlined is-hovered is-medium "><p class="is-size-6 has-text-weight-semibold">See all promotions</p></div>
           </div>
         </div>
         <div class="food-content my-6">
           <div class="container">
-            <h2 class="title is-size-2">There's something for everyone!</h2>
+            <h2 class="title is-size-3-desktop is-size-4-touch has-text-centered-touch">There's something for everyone!</h2>
           </div>
           <div class="container mt-5">
-            <div class="columns is-flex is-flex-wrap-wrap ">
-              <div class="column is-one-quarter">
+            <div class="columns has-margin-left-15-tablet has-margin-right-15-tablet is-one-third-mobile is-flex is-flex-wrap-wrap ">
+              <div class="column is-one-third-touch is-one-quarter ">
                 <div class="img is-fullwidth">
                   <img class="img-food " src="assets/FastFood_4710e425c3d24db2aa4280aa207a22d3_1547819143037208832.jpg">
                 </div>
@@ -441,7 +432,7 @@
                   </h1>
                 </div>
               </div>
-              <div class="column is-one-quarter">
+              <div class="column is-one-third-touch is-one-quarter">
                 <div class="img is-fullwidth">
                   <img class="img-food " src="assets/FastFood_4710e425c3d24db2aa4280aa207a22d3_1547819143037208832.jpg">
                 </div>
@@ -451,7 +442,7 @@
                   </h1>
                 </div>
               </div>
-              <div class="column is-one-quarter">
+              <div class="column is-one-third-touch is-one-quarter">
                 <div class="img is-fullwidth">
                   <img class="img-food " src="assets/FastFood_4710e425c3d24db2aa4280aa207a22d3_1547819143037208832.jpg">
                 </div>
@@ -461,7 +452,7 @@
                   </h1>
                 </div>
               </div>
-              <div class="column is-one-quarter">
+              <div class="column is-one-third-touch is-one-quarter">
                 <div class="img is-fullwidth">
                   <img class="img-food " src="assets/FastFood_4710e425c3d24db2aa4280aa207a22d3_1547819143037208832.jpg">
                 </div>
@@ -471,7 +462,7 @@
                   </h1>
                 </div>
               </div>
-              <div class="column is-one-quarter">
+              <div class="column is-one-third-touch is-one-quarter">
                 <div class="img is-fullwidth">
                   <img class="img-food " src="assets/FastFood_4710e425c3d24db2aa4280aa207a22d3_1547819143037208832.jpg">
                 </div>
@@ -481,7 +472,7 @@
                   </h1>
                 </div>
               </div>
-              <div class="column is-one-quarter">
+              <div class="column is-one-third-touch is-one-quarter">
                 <div class="img is-fullwidth">
                   <img class="img-food " src="assets/FastFood_4710e425c3d24db2aa4280aa207a22d3_1547819143037208832.jpg">
                 </div>
@@ -491,7 +482,7 @@
                   </h1>
                 </div>
               </div>
-              <div class="column is-one-quarter">
+              <div class="column is-one-third-touch is-one-quarter">
                 <div class="img is-fullwidth">
                   <img class="img-food " src="assets/FastFood_4710e425c3d24db2aa4280aa207a22d3_1547819143037208832.jpg">
                 </div>
@@ -501,7 +492,7 @@
                   </h1>
                 </div>
               </div>
-              <div class="column is-one-quarter">
+              <div class="column  is-one-third-touch is-one-quarter">
                 <div class="img is-fullwidth">
                   <img class="img-food " src="assets/FastFood_4710e425c3d24db2aa4280aa207a22d3_1547819143037208832.jpg">
                 </div>
@@ -511,7 +502,7 @@
                   </h1>
                 </div>
               </div>
-              <div class="column is-one-quarter">
+              <div class="column is-one-third-touch is-one-quarter">
                 <div class="img is-fullwidth">
                   <img class="img-food " src="assets/FastFood_4710e425c3d24db2aa4280aa207a22d3_1547819143037208832.jpg">
                 </div>
@@ -521,7 +512,7 @@
                   </h1>
                 </div>
               </div>
-              <div class="column is-one-quarter">
+              <div class="column is-one-third-touch is-one-quarter">
                 <div class="img is-fullwidth">
                   <img class="img-food " src="assets/FastFood_4710e425c3d24db2aa4280aa207a22d3_1547819143037208832.jpg">
                 </div>
@@ -531,7 +522,7 @@
                   </h1>
                 </div>
               </div>
-              <div class="column is-one-quarter">
+              <div class="column is-one-third-touch is-one-quarter">
                 <div class="img is-fullwidth">
                   <img class="img-food " src="assets/FastFood_4710e425c3d24db2aa4280aa207a22d3_1547819143037208832.jpg">
                 </div>
@@ -541,7 +532,7 @@
                   </h1>
                 </div>
               </div>
-              <div class="column is-one-quarter">
+              <div class="column is-one-third-touch is-one-quarter">
                 <div class="img is-fullwidth">
                   <img class="img-food " src="assets/FastFood_4710e425c3d24db2aa4280aa207a22d3_1547819143037208832.jpg">
                 </div>
@@ -551,7 +542,7 @@
                   </h1>
                 </div>
               </div>
-              <div class="column is-one-quarter">
+              <div class="column is-one-third-touch is-one-quarter">
                 <div class="img is-fullwidth">
                   <img class="img-food " src="assets/FastFood_4710e425c3d24db2aa4280aa207a22d3_1547819143037208832.jpg">
                 </div>
@@ -561,7 +552,7 @@
                   </h1>
                 </div>
               </div>
-              <div class="column is-one-quarter">
+              <div class="column is-one-third-touch is-one-quarter">
                 <div class="img is-fullwidth">
                   <img class="img-food " src="assets/FastFood_4710e425c3d24db2aa4280aa207a22d3_1547819143037208832.jpg">
                 </div>
@@ -571,7 +562,7 @@
                   </h1>
                 </div>
               </div>
-              <div class="column is-one-quarter">
+              <div class="column is-one-third-touch is-one-quarter">
                 <div class="img is-fullwidth">
                   <img class="img-food " src="assets/FastFood_4710e425c3d24db2aa4280aa207a22d3_1547819143037208832.jpg">
                 </div>
@@ -581,7 +572,7 @@
                   </h1>
                 </div>
               </div>
-              <div class="column is-one-quarter">
+              <div class="column is-one-third-touch is-one-quarter">
                 <div class="img is-fullwidth">
                   <img class="img-food " src="assets/FastFood_4710e425c3d24db2aa4280aa207a22d3_1547819143037208832.jpg">
                 </div>
@@ -594,7 +585,7 @@
             </div>
           </div>
         </div>
-        <div class="about-content">
+        <div class="about-content has-margin-left-15-touch has-margin-right-15-touch">
           <div class="container">
             <h2 class="title is-size-2">Tại sao nên lựa chọn GrabFood?</h2>
             <div class="columns is-flex is-flex-direction-column pl-1 ">
@@ -636,7 +627,7 @@
             <p>Lunch, Bún Cá Chấm Gốc Đa - Vũ Thạnh for Dinner! We are here to satisfy your hunger with a wide selection of merchant partners in Vietnam. GrabFood là dịch vụ Giao đồ ăn nhanh nhất tại Việt Nam. Chúng tôi đã sắp xếp tất cả các món ăn, nhà hàng và thực phẩm yêu thích của bạn một cách hợp lý để giúp bạn tìm được đồ ăn dễ dàng và nhanh chóng nhất có thể. Tìm và đặt món ăn yêu thích trên khắp Việt Nam - đặt đồ ăn trực tuyến chỉ bằng vài thao tác, từ món Lifted Coffee & Brunch cho bữa sáng, đến Maazi Indian – Nhà Hàng Ấn Độ cho bữa trưa, đến Bún Cá Chấm Gốc Đa – Vũ Thạnh cho bữa tối! Hãy để chúng tôi xua tan cơn đói của bạn nhờ một loạt đối tác bán đồ ăn ở Việt Nam.</p>
           </div>
           <div class="container mt-6">
-            <div class="button is-fullwidth is-outlined is-hovered is-medium "><p class="is-size-6 has-text-weight-semibold">Read More</p></div>
+            <div class=" has-margin-left-15-tablet has-margin-right-15-tablet button is-fullwidth is-outlined is-hovered is-medium "><p class="is-size-6 has-text-weight-semibold">Read More</p></div>
           </div>
         </div>
       </div>
@@ -667,7 +658,7 @@
                   <h2 class="is-size-6 has-text-centered ">Download Grab app to use other payment methods and enjoy seamless communication with your driver.</h2>
                 </div>
                 <div class="container">
-                  <div class="columns mt-3">
+                  <div class="columns is-flex-touch mt-3">
                     <div class="column">
                       <img src="assets/logo-appstore.svg" alt="">
                     </div>
