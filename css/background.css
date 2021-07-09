@@ -1,17 +1,37 @@
+
+
+@media only screen 
+and (min-device-width: 768px) 
+and (max-device-width: 1024px) 
+and (-webkit-min-device-pixel-ratio: 1) {
+  .button.is-fullwidth {
+    display: flex !important;
+    width: 97% !important;
+}
+
+}
+
+body {
+  overflow-x: hidden;
+}
+
+
 .nav-active {
   background-color: white !important;
   box-shadow: 5px -1px 12px -5px grey;
 }
 
 .img-border {
-    border-radius: 10px;
+    border-radius: 4px;
 }
 
 .img-food {
   border-radius: 4px;
 }
 
-.is-hovered:hover {
+
+
+.button .is-fullwidth .is-outlined .is-hovered .is-medium {
   color: green;
   border-color: green;
   
@@ -28,6 +48,10 @@
   background-color: rgba(0,0,0,0.5);
   z-index: 2;
   cursor: pointer;
+}
+
+.carousel {
+  overflow: hidden;
 }
 
 .padding-top {

@@ -1,3 +1,6 @@
+<<<<<<< CSS-Bulma-Project/Demo-Branch
+# Currect Building login page
+=======
 
 ## Project Title :computer:
 Grabfood-Project
@@ -17,3 +20,4 @@ It Needs Time to Research on New Technology.
 
 ## How to Start Project.
 Install extension Live Server from within your Visual studio Code and start it up.
+>>>>>>> main

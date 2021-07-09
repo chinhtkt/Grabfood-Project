@@ -1,0 +1,83 @@
+.navbar-input input {
+  cursor: pointer;
+  border-radius: 7px;
+}
+
+.nav-active {
+  background-color: white !important;
+  box-shadow: 5px -1px 12px -5px grey;
+  z-index: 999;
+}
+
+.navbar-input .input:focus {
+  border: solid green;
+  outline: none;
+  box-shadow: none;
+}
+
+.navbar-input input:focus::placeholder {
+  text-align: start;
+  font-weight: bold;
+}
+
+.navbar-input ::placeholder {
+  text-align: center;
+  font-weight: bold;
+}
+
+.navbar-input ::placeholder:focus {
+  text-align: start;
+}
+
+.slider-input ::placeholder {
+  color: gray;
+}
+
+.slider-input input {
+  border: 0;
+  box-shadow: none;
+}
+
+.slider-input .input:focus {
+  box-shadow: none;
+}
+
+.slider-img {
+  position: relative;
+}
+
+.txt {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  color: white;
+  background: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  font-weight: 500;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 0 2px 2px rgb(0 0 0 / 80%);
+}
+
+.slider-img img {
+  display: flex;
+}
+
+.is-hovered:hover {
+  color: green;
+  border-color: green;
+  
+}
+
+.carousel {
+  overflow: hidden;
+}
+
+.slider-img:hover {
+  border: solid green;
+  cursor: pointer;
+}
