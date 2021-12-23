@@ -11,6 +11,7 @@ This app is designed for developing my skills as well as learning new technology
 #### What I used  on this project
 Javascript</br>
 HTML</br>
+CSS</br>
 Bulma CSS Framework.
 
 #### Some of the challenges I faced and features I hope to implement in the future.
